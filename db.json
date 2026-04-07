@@ -1,0 +1,167 @@
+{
+  "materials": [
+    {
+      "id": "mat-plst-01-id",
+      "name": "PLASTIC RAW",
+      "code": "RM-PLST-01",
+      "unit": "kg",
+      "threshold": 500,
+      "inwardEntries": [
+        {
+          "id": "e2fc3b07-df0f-4c8b-947c-e541a5ee52d3",
+          "supplierId": "supp-darshan-id",
+          "quantity": 10000,
+          "date": "2026-03-05"
+        }
+      ]
+    },
+    {
+      "id": "mat-slvr-01-id",
+      "name": "SILVER 999",
+      "code": "RM-SLVR-01",
+      "unit": "kg",
+      "threshold": 100,
+      "inwardEntries": [
+        {
+          "id": "c41c3c0f-0bfa-4594-89c2-a8f28e387815",
+          "supplierId": "supp-darshan-id",
+          "quantity": 5000,
+          "date": "2026-03-12"
+        }
+      ]
+    },
+    {
+      "id": "16ed9bbb-e92f-4520-b5bf-d5f9f9ea978b",
+      "name": "FRAME",
+      "code": "FRM",
+      "unit": "pcs",
+      "threshold": 2500,
+      "inwardEntries": [
+        {
+          "id": "b0b23503-7cdd-4ec9-8a3f-02fd66842312",
+          "supplierId": "supp-darshan-id",
+          "quantity": 5600,
+          "date": "2026-03-24"
+        }
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": "prod-pen-01-id",
+      "name": "PREMIUM PEN",
+      "code": "FG-PEN-01"
+    },
+    {
+      "id": "prod-frm-01-id",
+      "name": "Standard Frame",
+      "code": "FG-FRM-01"
+    },
+    {
+      "id": "c3abfb48-ace9-461c-a77f-a3d34cc869f3",
+      "name": "GOLD FRAME",
+      "code": "GFR"
+    }
+  ],
+  "types": [
+    {
+      "id": "type-pb01-id",
+      "productId": "prod-pen-01-id",
+      "size": "25CM",
+      "color": "BLUE",
+      "code": "PB01",
+      "hasColor": true,
+      "isActive": true,
+      "unitWeight": 10
+    },
+    {
+      "id": "0f5f8fcd-5010-4426-af88-61f8704f6cd2",
+      "productId": "c3abfb48-ace9-461c-a77f-a3d34cc869f3",
+      "size": "10*2",
+      "sizeUnit": "MM",
+      "diameter": "10.2",
+      "unitWeight": 0.86,
+      "color": "Gold",
+      "code": "G1",
+      "hasColor": true,
+      "isActive": true
+    }
+  ],
+  "suppliers": [
+    {
+      "id": "supp-darshan-id",
+      "name": "DARSHAN METALS",
+      "contact": "7285842124",
+      "address": "Ph-II GIDC, Jamnagar"
+    }
+  ],
+  "employees": [
+    {
+      "id": "3c804be7-c578-437e-9e75-9cc5b8fb1195",
+      "name": "admin",
+      "idCode": "ADMIN",
+      "designation": "Administrator",
+      "password": "admin123",
+      "avatar": ""
+    }
+  ],
+  "parts": [
+    {
+      "id": "465c8b4a-65e8-4c66-82d8-ca1c5c3e0f52",
+      "name": "Spring",
+      "code": "SP-01",
+      "unit": "pcs"
+    }
+  ],
+  "entries": [],
+  "inwards": [
+    {
+      "id": "inv-001",
+      "date": "2026-03-24",
+      "productId": "prod-pen-01-id",
+      "pcs": 5000,
+      "materialId": "mat-plst-01-id",
+      "materialQuantity": 50,
+      "typeId": "type-pb01-id",
+      "batchCode": "FG-PEN-01-RM-PLST-01-PB01-001",
+      "coordinatorId": "emp-kate-id",
+      "notes": "Initial Batch"
+    },
+    {
+      "id": "inv-002",
+      "date": "2026-02-15",
+      "productId": "prod-pen-01-id",
+      "pcs": 8000,
+      "materialId": "mat-plst-01-id",
+      "materialQuantity": 80,
+      "typeId": "type-pb01-id",
+      "batchCode": "FG-PEN-01-RM-PLST-01-PB01-002",
+      "coordinatorId": "emp-kate-id",
+      "notes": "February Run"
+    },
+    {
+      "id": "inv-003",
+      "date": "2026-01-10",
+      "productId": "prod-pen-01-id",
+      "pcs": 12000,
+      "materialId": "mat-plst-01-id",
+      "materialQuantity": 120,
+      "typeId": "type-pb01-id",
+      "batchCode": "FG-PEN-01-RM-PLST-01-PB01-003",
+      "coordinatorId": "emp-kate-id",
+      "notes": "January Kickoff"
+    },
+    {
+      "id": "5c79e6ce-4754-4691-b8e4-b6579e7bfc8b",
+      "date": "2026-03-24",
+      "productId": "c3abfb48-ace9-461c-a77f-a3d34cc869f3",
+      "pcs": 56,
+      "materialId": "16ed9bbb-e92f-4520-b5bf-d5f9f9ea978b",
+      "materialQuantity": 0.048159999999999994,
+      "typeId": "0f5f8fcd-5010-4426-af88-61f8704f6cd2",
+      "batchCode": "GFR-FRM-G1-004",
+      "coordinatorId": "",
+      "notes": ""
+    }
+  ]
+}
