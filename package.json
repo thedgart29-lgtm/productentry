@@ -51,6 +51,7 @@
     },
     "files": [
       "out/**/*",
+      "public/**/*",
       "electron/**/*",
       "node_modules/**/*"
     ],
@@ -62,7 +63,7 @@
     ],
     "win": {
       "target": ["nsis"],
-      "icon": "public/window.svg"
+      "icon": "public/icon.png"
     },
     "mac": {
       "target": ["dmg"],
@@ -70,7 +71,7 @@
       "hardenedRuntime": true,
       "gatekeeperAssess": false,
       "darkModeSupport": true,
-      "icon": "public/window.svg"
+      "icon": "public/icon.png"
     }
   }
 }
