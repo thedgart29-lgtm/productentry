@@ -35,8 +35,7 @@ jobs:
       - name: Fix permissions (macOS only)
         if: matrix.os == 'macos-latest'
         run: |
-          chmod +x node_modules/app-builder-bin/mac/app-builder_arm64
-          chmod +x node_modules/app-builder-bin/mac/app-builder_x64
+          find node_modules/app-builder-bin -type f -name "app-builder*" -exec chmod +x {} +
         shell: bash
 
       - name: Build Electron App
