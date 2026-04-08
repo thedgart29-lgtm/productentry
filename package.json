@@ -46,6 +46,7 @@
   "build": {
     "appId": "com.industrial.coresuite",
     "productName": "Industrial Core Suite",
+    "executableName": "IndustrialCoreSuite",
     "directories": {
       "output": "dist"
     },
@@ -63,16 +64,26 @@
       }
     ],
     "win": {
-      "target": ["nsis"],
+      "target": [
+        "nsis"
+      ],
       "icon": "icon.png"
     },
     "mac": {
-      "target": ["dmg"],
+      "target": [
+        "dmg"
+      ],
       "category": "public.app-category.business",
       "hardenedRuntime": true,
       "gatekeeperAssess": false,
       "darkModeSupport": true,
       "icon": "icon.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
     }
   }
 }

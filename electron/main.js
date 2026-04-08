@@ -25,7 +25,10 @@ async function createWindow() {
     const userDataPath = path.join(app.getPath("userData"), "Database");
 
     // In production, we run the standalone Next.js server
-    nextProcess = spawn("node", [path.join(__dirname, "../out/server.js")], {
+    const serverScript = path.join(__dirname, "../out/server.js");
+    console.log(`Starting Next.js server from: ${serverScript}`);
+
+    nextProcess = spawn("node", [serverScript], {
       env: {
         ...process.env,
         PORT: "3000",
@@ -35,11 +38,11 @@ async function createWindow() {
     });
 
     nextProcess.stdout.on("data", (data) => {
-      console.log(`Next.js stdout: ${data}`);
+      console.log(`[Next.js Server]: ${data}`);
     });
 
     nextProcess.stderr.on("data", (data) => {
-      console.error(`Next.js stderr: ${data}`);
+      console.error(`[Next.js Server Error]: ${data}`);
     });
 
     // Wait until the server is ready
